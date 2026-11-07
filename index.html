@@ -1,81 +1,112 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#102820" />
-  <meta name="description" content="SweetCake — торты на заказ для дней рождения, свадеб и тёплых семейных праздников. Выбирайте вдохновение и напишите нам." />
-  <meta property="og:title" content="SweetCake — торты для особенных событий" />
-  <meta property="og:description" content="Торты на заказ с индивидуальным оформлением. Небольшая кондитерская с большим вниманием к деталям." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/img/hero-cake.webp" />
-  <title>SweetCake — торты на заказ</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10271f">
+  <meta name="description" content="SweetCake — торты на заказ для особенных событий. Индивидуальный дизайн, любимые вкусы и детали, которые запомнятся.">
+  <meta property="og:title" content="SweetCake — торты на заказ">
+  <meta property="og:description" content="Торты для особенных событий. Выберите оформление и напишите в удобном мессенджере.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/hero-cake.webp">
+  <title>SweetCake — торты для особенных событий</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/img/hero-cake.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
-  <div class="site-shell" id="top">
-    <header class="site-header" id="header">
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="SweetCake — на главную">
-          <svg class="brand-icon" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M9 23h34v18c-8 6-26 6-34 0V23Z"/><path d="M9 30c5 0 5 5 10 5s5-5 10-5 5 5 10 5 4-2 4-2M13 20l4-10 9 7 9-7 4 10M26 17V9m0-2V4M9 42c9 5 24 6 34 0"/></svg>
-          <span class="brand-text"><span class="brand-name">SweetCake</span><span class="brand-caption">ТОРТЫ НА ЗАКАЗ</span></span>
-        </a>
-        <nav class="desktop-nav" aria-label="Основная навигация"><a href="#top">Главная</a><a href="#cakes">Наши торты</a><a href="#about">О нас</a><a href="#contacts">Контакты</a></nav>
-        <div class="header-actions">
-          <a class="round-link" href="https://t.me/USERNAME" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram (откроется новая вкладка)" data-demo-contact="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-8.4 18-3.4-7.1L2 10.5 21 3ZM9.2 13.9 21 3"/></svg></a>
-          <a class="round-link" href="https://wa.me/79990000000" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp (откроется новая вкладка)" data-demo-contact="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 11.8a8.4 8.4 0 0 1-12.5 7.4L3 20.6l1.5-4.7A8.4 8.4 0 1 1 20.4 11.8Z"/><path d="M8.5 7.7c-.5 1.3.3 3.6 2.2 5.5s4.1 2.9 5.3 2.3c.6-.3 1-1.2.7-1.5l-2.3-1.1-1.2 1c-1.4-.5-2.5-1.6-3.1-3l1-1.1-1.2-2.2c-.3-.4-1.1-.4-1.4.1Z"/></svg></a>
-          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
-        </div>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="SweetCake, на главную">
+        <svg class="brand-icon" viewBox="0 0 52 52" fill="none" aria-hidden="true"><path d="M9 23h34v18c-8 6-26 6-34 0V23Z"/><path d="M9 30c5 0 5 5 10 5s5-5 10-5 5 5 10 5 4-2 4-2M13 20l4-10 9 7 9-7 4 10M26 17V9m0-2V4M9 42c9 5 24 6 34 0"/></svg>
+        <span class="brand-wordmark"><span class="brand-name">SweetCake</span><span class="brand-subtitle">ТОРТЫ НА ЗАКАЗ</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Основное меню">
+        <a href="#top" aria-current="page">Главная</a><a href="#cakes">Каталог</a><a href="#benefits">Преимущества</a><a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-link" href="https://t.me/USERNAME" target="_blank" rel="noopener noreferrer" aria-label="Telegram (новая вкладка)" data-demo-contact="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-8.4 18-3.4-7.1L2 10.5 21 3ZM9.2 13.9 21 3"/></svg></a>
+        <a class="icon-link" href="https://wa.me/79990000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (новая вкладка)" data-demo-contact="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 11.8a8.4 8.4 0 0 1-12.5 7.4L3 20.6l1.5-4.7A8.4 8.4 0 1 1 20.4 11.8Z"/><path d="M8.5 7.7c-.5 1.3.3 3.6 2.2 5.5s4.1 2.9 5.3 2.3c.6-.3 1-1.2.7-1.5l-2.3-1.1-1.2-2.2c-.3-.4-1.1-.4-1.4.1Z"/></svg></a>
+        <button class="menu-toggle" type="button" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
       </div>
-      <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация" inert><a href="#top">Главная</a><a href="#cakes">Наши торты</a><a href="#about">О нас</a><a href="#contacts">Контакты</a></nav>
-    </header>
-    <main id="main">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-grain" aria-hidden="true"></div>
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <p class="eyebrow reveal">НЕБОЛЬШАЯ КОНДИТЕРСКАЯ · БОЛЬШАЯ ЛЮБОВЬ</p>
-            <h1 id="hero-title" class="reveal">Торты для <em>особенных</em> событий<span class="period">.</span></h1>
-            <p class="hero-description reveal">Всё самое важное — в деталях: любимый вкус, продуманный декор и торт, созданный именно для вас.</p>
-            <a class="button button-primary reveal" href="#cakes">Выбрать торт <span aria-hidden="true">↗</span></a>
-            <div class="hero-note reveal"><span class="note-line"></span>Испечено с заботой, украшено с любовью</div>
-          </div>
-          <div class="hero-visual reveal"><div class="hero-photo-wrap"><img class="hero-photo" src="assets/img/hero-cake.webp" alt="Кремовый торт с шоколадными подтёками, клубникой и голубикой" width="1000" height="743" fetchpriority="high" /></div><span class="photo-stamp" aria-hidden="true">handmade<br />with love ♡</span><span class="hero-doodle" aria-hidden="true">♡</span></div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Мобильное меню" inert>
+      <a href="#top">Главная</a><a href="#cakes">Каталог</a><a href="#benefits">Преимущества</a><a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true"><img src="assets/img/hero-cake.webp" alt="" width="1672" height="941" fetchpriority="high"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">ТОРТЫ НА ЗАКАЗ</p>
+          <h1 id="hero-title">Торты<br>для <em>особенных</em><br>событий</h1>
+          <p class="hero-description">Индивидуальный дизайн, натуральные ингредиенты и безупречный вкус.</p>
+          <a class="pill-button" href="#cakes">Выбрать торт <span aria-hidden="true">⟶</span></a>
         </div>
-        <div class="hero-bottom" aria-hidden="true">✦ <span>Ваш повод — наше вдохновение</span> ✦</div>
-      </section>
-      <section class="benefits" aria-label="Наши принципы"><div class="container benefits-grid">
-        <div class="benefit"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M38 8C21 10 11 21 14 37c15 2 25-11 24-29ZM11 40c8-12 15-17 25-24"/></svg><span>Знакомые<br />ингредиенты</span></div>
-        <div class="benefit"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40S6 28 6 17a10 10 0 0 1 18-6 10 10 0 0 1 18 6c0 11-18 23-18 23Z"/></svg><span>Особенный<br />дизайн</span></div>
-        <div class="benefit"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 25h34v15H7zM5 25c0-7 38-7 38 0M13 14h22v11H13zM16 14c0-7 16-7 16 0M24 7V3M7 33c5 0 5 4 11 4s6-4 12-4 6 4 11 4"/></svg><span>Для любого<br />повода</span></div>
-        <div class="benefit"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="10" width="34" height="31" rx="3"/><path d="M7 19h34M15 5v10M33 5v10M15 28h5M26 28h5M15 35h5"/></svg><span>Планируем<br />заранее</span></div>
-      </div></section>
-      <section class="cakes-section section-space" id="cakes" aria-labelledby="cakes-heading">
-        <div class="container">
-          <div class="section-heading reveal"><div><p class="eyebrow peach">ВДОХНОВЕНИЕ ДЛЯ ВАШЕГО ПРАЗДНИКА</p><h2 id="cakes-heading">Торты, в которые <em>влюбляются</em></h2></div><p>Немного наших любимых идей. Каждый торт можно адаптировать под ваш праздник.</p></div>
-          <div class="carousel-layout">
-            <button class="slider-arrow slider-prev" id="sliderPrev" type="button" aria-label="Предыдущие торты" aria-controls="cakesTrack"><span aria-hidden="true">←</span></button>
-            <div class="cakes-track" id="cakesTrack" role="region" aria-roledescription="карусель" aria-label="Варианты оформления тортов" tabindex="0">
-              <article class="cake-card" aria-label="1 из 4: Ягодная классика"><button type="button" class="cake-card-button" data-cake="0" aria-label="Подробнее о торте Ягодная классика"><img src="assets/img/cake-berries.webp" alt="Нежный светлый торт со свежими ягодами" width="640" height="473" loading="lazy" /><span class="cake-card-overlay"><span><small>01 / ЯГОДНЫЕ</small><strong>Ягодная классика</strong></span><span class="card-arrow" aria-hidden="true">↗</span></span></button></article>
-              <article class="cake-card" aria-label="2 из 4: Шоколадный"><button type="button" class="cake-card-button" data-cake="1" aria-label="Подробнее о шоколадном торте"><img src="assets/img/cake-chocolate.webp" alt="Тёмный шоколадный торт с шоколадным декором" width="640" height="473" loading="lazy" /><span class="cake-card-overlay"><span><small>02 / ШОКОЛАДНЫЕ</small><strong>Шоколадное настроение</strong></span><span class="card-arrow" aria-hidden="true">↗</span></span></button></article>
-              <article class="cake-card" aria-label="3 из 4: Праздничный"><button type="button" class="cake-card-button" data-cake="2" aria-label="Подробнее о праздничном торте"><img src="assets/img/cake-celebration.webp" alt="Розовый торт с нежным цветочным декором" width="640" height="456" loading="lazy" /><span class="cake-card-overlay"><span><small>03 / ПРАЗДНИЧНЫЕ</small><strong>Нежный праздник</strong></span><span class="card-arrow" aria-hidden="true">↗</span></span></button></article>
-              <article class="cake-card" aria-label="4 из 4: Авторский"><button type="button" class="cake-card-button" data-cake="3" aria-label="Подробнее об авторском торте"><img src="assets/img/cake-botanical.webp" alt="Минималистичный белый торт с зелёными веточками" width="640" height="490" loading="lazy" /><span class="cake-card-overlay"><span><small>04 / АВТОРСКИЕ</small><strong>Ботаника</strong></span><span class="card-arrow" aria-hidden="true">↗</span></span></button></article>
-            </div>
-            <button class="slider-arrow slider-next" id="sliderNext" type="button" aria-label="Следующие торты" aria-controls="cakesTrack"><span aria-hidden="true">→</span></button>
+        <svg class="hero-doodle" viewBox="0 0 152 59" fill="none" aria-hidden="true"><path d="M8 20C8 2 24 3 22 17C27 5 43 12 35 27C28 40 20 41 22 41C47 43 68 18 99 22C119 24 131 38 145 32" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits" aria-label="Наши преимущества">
+      <div class="container benefits-grid">
+        <div class="benefit"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M38 8C21 10 11 21 14 37c15 2 25-11 24-29ZM11 40c8-12 15-17 25-24"/></svg><span>Натуральные<br>ингредиенты</span></div>
+        <div class="benefit"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40S6 28 6 17a10 10 0 0 1 18-6 10 10 0 0 1 18 6c0 11-18 23-18 23Z"/></svg><span>Индивидуальный<br>дизайн</span></div>
+        <div class="benefit"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 25h34v15H7zM5 25c0-7 38-7 38 0M13 14h22v11H13zM16 14c0-7 16-7 16 0M24 7V3M7 33c5 0 5 4 11 4s6-4 12-4 6 4 11 4"/></svg><span>На любой<br>повод</span></div>
+        <div class="benefit"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="10" width="34" height="31" rx="3"/><path d="M7 19h34M15 5v10M33 5v10M15 28h5M26 28h5M15 35h5"/></svg><span>Изготовление<br>в срок</span></div>
+      </div>
+    </section>
+
+    <section class="cakes" id="cakes" aria-labelledby="cakes-title">
+      <div class="container">
+        <div class="ornament-title reveal"><span aria-hidden="true"></span><h2 id="cakes-title">Популярные торты</h2><span aria-hidden="true"></span></div>
+        <div class="carousel reveal">
+          <button type="button" class="slider-arrow slider-prev" id="sliderPrev" aria-label="Предыдущие торты" aria-controls="cakesTrack">‹</button>
+          <div class="cakes-track" id="cakesTrack" role="region" aria-roledescription="карусель" aria-label="Категории тортов" tabindex="0">
+            <article class="cake-card"><button type="button" class="cake-card-button" data-cake="0" aria-label="Подробнее: Классические торты"><img src="assets/img/cake-berries.webp" alt="Белый торт с ягодами на подставке" width="1230" height="922" loading="lazy"><span class="cake-card-caption"><span>Классические</span><span aria-hidden="true">⟶</span></span></button></article>
+            <article class="cake-card"><button type="button" class="cake-card-button" data-cake="1" aria-label="Подробнее: Шоколадные торты"><img src="assets/img/cake-chocolate.webp" alt="Шоколадный торт с трюфелями" width="1448" height="1086" loading="lazy"><span class="cake-card-caption"><span>Шоколадные</span><span aria-hidden="true">⟶</span></span></button></article>
+            <article class="cake-card"><button type="button" class="cake-card-button" data-cake="2" aria-label="Подробнее: Праздничные торты"><img src="assets/img/cake-celebration.webp" alt="Розовый торт с цветочным кремовым декором" width="1448" height="1086" loading="lazy"><span class="cake-card-caption"><span>Праздничные</span><span aria-hidden="true">⟶</span></span></button></article>
+            <article class="cake-card"><button type="button" class="cake-card-button" data-cake="3" aria-label="Подробнее: Индивидуальный дизайн"><img src="assets/img/cake-botanical.webp" alt="Светлый торт с веточками эвкалипта" width="1448" height="1086" loading="lazy"><span class="cake-card-caption"><span>Индивидуальный<br>дизайн</span><span aria-hidden="true">⟶</span></span></button></article>
+            <article class="cake-card"><button type="button" class="cake-card-button" data-cake="4" aria-label="Подробнее: Ягодные торты"><img src="assets/img/cake-seasonal.webp" alt="Торт с шоколадными подтёками и свежими ягодами" width="1448" height="1086" loading="lazy"><span class="cake-card-caption"><span>Ягодные</span><span aria-hidden="true">⟶</span></span></button></article>
           </div>
-          <p class="slider-hint">Листайте подборку <span aria-hidden="true">↔</span> Нажмите на торт, чтобы рассмотреть</p>
-          <div class="slider-pagination" id="sliderPagination" aria-label="Положение слайдера"></div>
+          <button type="button" class="slider-arrow slider-next" id="sliderNext" aria-label="Следующие торты" aria-controls="cakesTrack">›</button>
         </div>
-      </section>
-      <section class="story-section section-space" id="about" aria-labelledby="story-heading"><div class="container story-panel reveal"><div class="story-image"><img src="assets/img/cake-slice.webp" alt="Кусочек шоколадного торта с ягодами на сервировочной тарелке" loading="lazy" width="640" height="203" /></div><div class="story-copy"><p class="eyebrow dark">ВКУСНЫЕ ВОСПОМИНАНИЯ</p><h2 id="story-heading">Ваш праздник.<br /><em>Ваш торт.</em></h2><p>День рождения, свадьба, годовщина или просто повод собраться вместе. Расскажите нам свою идею — мы поможем воплотить её в десерте.</p><a href="#contacts" class="text-link">Обсудить идею <span aria-hidden="true">↗</span></a></div></div></section>
-      <section class="contact-section section-space" id="contacts" aria-labelledby="contact-heading"><div class="container contact-inner reveal"><p class="eyebrow peach">ДАВАЙТЕ СОЗДАДИМ ЧТО-ТО ОСОБЕННОЕ</p><h2 id="contact-heading">Осталось только <em>написать</em></h2><p>Расскажите о дате, количестве гостей и торте мечты. Ответим в переписке и обсудим детали.</p><div class="contact-buttons"><a href="https://t.me/USERNAME" class="contact-button" target="_blank" rel="noopener noreferrer" data-demo-contact="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-8.4 18-3.4-7.1L2 10.5 21 3ZM9.2 13.9 21 3"/></svg> Написать в Telegram <span aria-hidden="true">↗</span></a><a href="https://wa.me/79990000000" class="contact-button" target="_blank" rel="noopener noreferrer" data-demo-contact="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 11.8a8.4 8.4 0 0 1-12.5 7.4L3 20.6l1.5-4.7A8.4 8.4 0 1 1 20.4 11.8Z"/><path d="M8.5 7.7c-.5 1.3.3 3.6 2.2 5.5s4.1 2.9 5.3 2.3c.6-.3 1-1.2.7-1.5l-2.3-1.1-1.2-2.2c-.3-.4-1.1-.4-1.4.1Z"/></svg> Написать в WhatsApp <span aria-hidden="true">↗</span></a></div><p class="contact-aside">* Демонстрационный проект для портфолио. Контакты необходимо заменить на свои.</p></div></section>
-    </main>
-    <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#top">SweetCake <span>♡</span></a><p>Торты, в которых есть история.</p><a href="#top" class="back-top">Наверх ↑</a></div></footer>
-  </div>
-  <dialog class="cake-dialog" id="cakeDialog" aria-labelledby="dialogTitle" aria-describedby="dialogDescription"><button class="dialog-close" id="dialogClose" type="button" aria-label="Закрыть окно">×</button><div class="dialog-grid"><img id="dialogImage" src="assets/img/cake-berries.webp" alt="" width="640" height="473" /><div class="dialog-content"><p class="eyebrow dark">ТОРТЫ НА ЗАКАЗ</p><h2 id="dialogTitle">Ягодная классика</h2><p id="dialogDescription"></p><p class="dialog-footnote">Оформление, декор и начинку обсудим индивидуально.</p><a href="#contacts" id="dialogContact" class="button button-dark">Обсудить торт <span aria-hidden="true">↗</span></a></div></div></dialog>
+        <div class="slider-pagination" id="sliderPagination" aria-label="Выбор торта в карусели"></div>
+      </div>
+    </section>
+
+    <section class="promo" aria-labelledby="promo-title">
+      <div class="container reveal"><div class="promo-panel">
+        <div class="promo-image"><img src="assets/img/cake-slice.webp" alt="Кусочек шоколадного торта с ягодами на светлой тарелке" width="1672" height="941" loading="lazy"></div>
+        <div class="promo-text"><h2 id="promo-title">Торт, который<br>запомнится ♡</h2><p>На день рождения, свадьбу, юбилей или просто к уютному чаепитию.</p></div>
+      </div></div>
+    </section>
+
+    <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container contacts-content reveal">
+        <div class="ornament-title"><span aria-hidden="true"></span><h2 id="contacts-title">Связаться с нами</h2><span aria-hidden="true"></span></div>
+        <div class="contacts-buttons">
+          <a class="contact-link" href="https://t.me/USERNAME" target="_blank" rel="noopener noreferrer" data-demo-contact="Telegram"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-8.4 18-3.4-7.1L2 10.5 21 3ZM9.2 13.9 21 3"/></svg></span><span class="contact-label">Написать в Telegram</span></a>
+          <a class="contact-link" href="https://wa.me/79990000000" target="_blank" rel="noopener noreferrer" data-demo-contact="WhatsApp"><span class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 11.8a8.4 8.4 0 0 1-12.5 7.4L3 20.6l1.5-4.7A8.4 8.4 0 1 1 20.4 11.8Z"/><path d="M8.5 7.7c-.5 1.3.3 3.6 2.2 5.5s4.1 2.9 5.3 2.3c.6-.3 1-1.2.7-1.5l-2.3-1.1-1.2-2.2c-.3-.4-1.1-.4-1.4.1Z"/></svg></span><span class="contact-label">Написать в WhatsApp</span></a>
+        </div>
+        <svg class="contact-flourish" viewBox="0 0 180 70" aria-hidden="true" fill="none"><path d="M1 64c36-3 63-38 91-34 12 2 23 13 37 13 30 0 37-26 35-32-5-13-19-5-14 8 7-16-6-25-15-16-12 11 5 32 30 35" stroke="currentColor" stroke-width="1.2"/></svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><span class="footer-logo">SweetCake</span><span>Демонстрационный проект для портфолио · 2026</span></div></footer>
+
+  <dialog class="cake-dialog" id="cakeDialog" aria-labelledby="dialogTitle" aria-describedby="dialogDescription">
+    <div class="dialog-layout">
+      <button type="button" class="dialog-close" id="dialogClose" aria-label="Закрыть окно">×</button>
+      <div class="dialog-photo"><img id="dialogImage" src="assets/img/cake-berries.webp" alt="" width="1230" height="922"><button type="button" id="dialogPrev" class="dialog-image-prev" aria-label="Предыдущий торт">‹</button><button type="button" id="dialogNext" class="dialog-image-next" aria-label="Следующий торт">›</button></div>
+      <div class="dialog-copy"><span class="dialog-overline">ТОРТЫ НА ЗАКАЗ</span><h2 id="dialogTitle">Классические</h2><p id="dialogDescription">Торт для самых тёплых поводов.</p><a href="https://t.me/USERNAME" id="dialogContact" data-demo-contact="Telegram" class="pill-button" target="_blank" rel="noopener noreferrer">Обсудить в Telegram <span aria-hidden="true">⟶</span></a></div>
+    </div>
+  </dialog>
   <div class="toast" id="demoToast" role="status" aria-live="polite"></div>
 </body>
 </html>
